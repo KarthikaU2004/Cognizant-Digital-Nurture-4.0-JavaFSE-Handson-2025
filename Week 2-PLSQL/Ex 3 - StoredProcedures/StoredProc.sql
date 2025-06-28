@@ -38,6 +38,7 @@ INSERT INTO Accounts VALUES (102, 2, 'Savings', 20000, SYSDATE);
 INSERT INTO Accounts VALUES (103, 3, 'Current', 5000, SYSDATE);
 COMMIT;
 
+--Scenario 1
 CREATE OR REPLACE PROCEDURE ProcessMonthlyInterest IS
   v_old_balance NUMBER;
   v_new_balance NUMBER;
@@ -69,6 +70,7 @@ EXEC ProcessMonthlyInterest;
 
 SELECT * FROM Accounts;
 
+--Scenario 2
 CREATE OR REPLACE PROCEDURE UpdateEmployeeBonus (
   dept IN VARCHAR2,
   bonus_percent IN NUMBER
@@ -102,6 +104,7 @@ SET SERVEROUTPUT ON;
 EXEC UpdateEmployeeBonus('Sales', 10);
 SELECT * FROM Employees;
 
+--Scenario 3
 CREATE OR REPLACE PROCEDURE TransferFunds (
   from_acc IN NUMBER,
   to_acc IN NUMBER,
