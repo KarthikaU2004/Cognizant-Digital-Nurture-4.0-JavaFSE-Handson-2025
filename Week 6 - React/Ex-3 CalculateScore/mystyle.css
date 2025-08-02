@@ -1,0 +1,30 @@
+.student-details {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  color: green;  /* Value color should be green */
+  font-size: 1.2em;
+}
+
+h2 {
+  color: red;  /* Title should be red */
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+button:hover {
+  background-color: darkblue;
+}
