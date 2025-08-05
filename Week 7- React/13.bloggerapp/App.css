@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.section {
+  border-left: 4px solid green;
+  padding: 10px 20px;
+  width: 30%;
+}
+
+.section h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section h3 {
+  margin: 5px 0;
+}
+
+.section h4,
+.section h5 {
+  margin: 2px 0;
+  color: gray;
+}
+
+.section p {
+  font-size: 14px;
+  color: #333;
+}
